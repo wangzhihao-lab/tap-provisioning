@@ -1,0 +1,14 @@
+{
+  "source": "AI-assistant session export (not public); timestamps and lengths only",
+  "sheet": "class 1",
+  "day": "2026-03-24",
+  "window": [
+    "08:20",
+    "08:50"
+  ],
+  "n_requests": 178,
+  "n_students": 94,
+  "span_s": 1514.0,
+  "first_request_wallclock": "2026-03-24 08:20 window, first student turn",
+  "reply_chars_median": 287.0
+}

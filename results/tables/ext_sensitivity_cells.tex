@@ -1,0 +1,81 @@
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Timing cell & Policy & GPU-h/wk & $S^{\mathrm{in}}$ & $S^{\mathrm{off}}$ & Excess USD/wk \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{32B (c2)}} \\
+J: common share 1.0 & Offline optimum & 187.6 & 1.000 & 0.997 & 0.0 \\
+J: common share 1.0 & TAP & 186.9 & 0.371 & 0.899 & 450.1 \\
+J: common share 1.0 & Timetable + known timing & 189.6 & 0.388 & 0.904 & 394.4 \\
+J: common share 1.0 & Timetable + learned timing (prior) & 189.9 & 0.404 & 0.908 & 420.1 \\
+J: common share 1.0 & Reactive, SLO-floor tuned & 271.9 & 0.421 & 0.960 & 843.4 \\
+J: common share 1.0 & Token velocity, SLO-floor tuned & 210.0 & 0.380 & 0.933 & 838.0 \\
+I: common share 0.75 & Offline optimum & 185.9 & 0.998 & 0.992 & 0.0 \\
+I: common share 0.75 & TAP & 186.6 & 0.565 & 0.918 & 220.5 \\
+I: common share 0.75 & Timetable + known timing & 189.6 & 0.687 & 0.936 & 153.4 \\
+I: common share 0.75 & Timetable + learned timing (prior) & 189.5 & 0.639 & 0.932 & 190.8 \\
+I: common share 0.75 & Reactive, SLO-floor tuned & 272.6 & 0.599 & 0.973 & 487.4 \\
+I: common share 0.75 & Token velocity, SLO-floor tuned & 199.4 & 0.505 & 0.942 & 445.0 \\
+H: common share 0.5 & Offline optimum & 185.1 & 0.998 & 0.991 & 0.0 \\
+H: common share 0.5 & TAP & 186.4 & 0.726 & 0.938 & 118.0 \\
+H: common share 0.5 & Timetable + known timing & 189.6 & 0.841 & 0.957 & 75.2 \\
+H: common share 0.5 & Timetable + learned timing (prior) & 189.4 & 0.793 & 0.955 & 97.6 \\
+H: common share 0.5 & Reactive, SLO-floor tuned & 271.7 & 0.746 & 0.986 & 313.8 \\
+H: common share 0.5 & Token velocity, SLO-floor tuned & 196.7 & 0.582 & 0.946 & 256.7 \\
+G: common share 0.25 & Offline optimum & 184.6 & 0.997 & 0.988 & 0.0 \\
+G: common share 0.25 & TAP & 186.4 & 0.852 & 0.960 & 54.3 \\
+G: common share 0.25 & Timetable + known timing & 189.6 & 0.936 & 0.976 & 34.3 \\
+G: common share 0.25 & Timetable + learned timing (prior) & 189.2 & 0.901 & 0.973 & 44.4 \\
+G: common share 0.25 & Reactive, SLO-floor tuned & 270.8 & 0.881 & 0.994 & 233.1 \\
+G: common share 0.25 & Token velocity, SLO-floor tuned & 195.3 & 0.672 & 0.951 & 164.1 \\
+K: mean offset known, no spread & Offline optimum & 184.1 & 0.996 & 0.985 & 0.0 \\
+K: mean offset known, no spread & TAP & 186.3 & 0.991 & 0.986 & 10.6 \\
+K: mean offset known, no spread & Timetable + known timing & 194.2 & 0.888 & 0.951 & 106.9 \\
+K: mean offset known, no spread & Timetable + learned timing (prior) & 189.1 & 0.997 & 0.990 & 11.2 \\
+K: mean offset known, no spread & Reactive, SLO-floor tuned & 270.7 & 0.959 & 0.998 & 197.4 \\
+K: mean offset known, no spread & Token velocity, SLO-floor tuned & 193.9 & 0.750 & 0.958 & 118.0 \\
+L: wide independent spread (session sd 12) & Offline optimum & 182.2 & 0.986 & 0.968 & 0.0 \\
+L: wide independent spread (session sd 12) & TAP & 184.5 & 0.957 & 0.963 & 18.3 \\
+L: wide independent spread (session sd 12) & Timetable + known timing & 187.8 & 0.986 & 0.972 & 14.4 \\
+L: wide independent spread (session sd 12) & Timetable + learned timing (prior) & 187.8 & 0.981 & 0.973 & 16.5 \\
+L: wide independent spread (session sd 12) & Reactive, SLO-floor tuned & 271.7 & 0.997 & 1.000 & 178.6 \\
+L: wide independent spread (session sd 12) & Token velocity, SLO-floor tuned & 190.9 & 0.898 & 0.966 & 70.6 \\
+\addlinespace
+\multicolumn{6}{@{}l}{\emph{72B (c3)}} \\
+J: common share 1.0 & Offline optimum & 206.3 & 0.994 & 0.955 & 0.0 \\
+J: common share 1.0 & TAP & 207.5 & 0.296 & 0.877 & 760.0 \\
+J: common share 1.0 & Timetable + known timing & 212.1 & 0.310 & 0.882 & 663.9 \\
+J: common share 1.0 & Timetable + learned timing (prior) & 212.3 & 0.327 & 0.888 & 707.4 \\
+J: common share 1.0 & Reactive, SLO-floor tuned & 486.9 & 0.411 & 0.959 & 1605.5 \\
+J: common share 1.0 & Token velocity, SLO-floor tuned & 232.6 & 0.305 & 0.840 & 1423.1 \\
+I: common share 0.75 & Offline optimum & 204.6 & 0.995 & 0.963 & 0.0 \\
+I: common share 0.75 & TAP & 207.3 & 0.461 & 0.890 & 398.0 \\
+I: common share 0.75 & Timetable + known timing & 212.1 & 0.567 & 0.908 & 282.0 \\
+I: common share 0.75 & Timetable + learned timing (prior) & 212.1 & 0.537 & 0.906 & 342.7 \\
+I: common share 0.75 & Reactive, SLO-floor tuned & 485.3 & 0.683 & 0.983 & 957.1 \\
+I: common share 0.75 & Token velocity, SLO-floor tuned & 219.9 & 0.444 & 0.868 & 758.3 \\
+H: common share 0.5 & Offline optimum & 203.9 & 0.995 & 0.965 & 0.0 \\
+H: common share 0.5 & TAP & 207.1 & 0.600 & 0.906 & 226.5 \\
+H: common share 0.5 & Timetable + known timing & 212.1 & 0.758 & 0.930 & 145.6 \\
+H: common share 0.5 & Timetable + learned timing (prior) & 211.9 & 0.704 & 0.928 & 186.5 \\
+H: common share 0.5 & Reactive, SLO-floor tuned & 480.6 & 0.849 & 0.992 & 702.9 \\
+H: common share 0.5 & Token velocity, SLO-floor tuned & 216.3 & 0.512 & 0.885 & 470.9 \\
+G: common share 0.25 & Offline optimum & 203.5 & 0.995 & 0.965 & 0.0 \\
+G: common share 0.25 & TAP & 207.1 & 0.754 & 0.932 & 110.5 \\
+G: common share 0.25 & Timetable + known timing & 212.1 & 0.879 & 0.949 & 67.8 \\
+G: common share 0.25 & Timetable + learned timing (prior) & 211.8 & 0.837 & 0.951 & 87.9 \\
+G: common share 0.25 & Reactive, SLO-floor tuned & 478.4 & 0.947 & 0.997 & 615.1 \\
+G: common share 0.25 & Token velocity, SLO-floor tuned & 214.3 & 0.568 & 0.899 & 325.4 \\
+K: mean offset known, no spread & Offline optimum & 203.1 & 0.994 & 0.964 & 0.0 \\
+K: mean offset known, no spread & TAP & 207.0 & 0.975 & 0.973 & 22.0 \\
+K: mean offset known, no spread & Timetable + known timing & 216.3 & 0.746 & 0.868 & 263.0 \\
+K: mean offset known, no spread & Timetable + learned timing (prior) & 211.8 & 0.994 & 0.979 & 21.0 \\
+K: mean offset known, no spread & Reactive, SLO-floor tuned & 477.2 & 0.984 & 0.999 & 581.4 \\
+K: mean offset known, no spread & Token velocity, SLO-floor tuned & 212.8 & 0.622 & 0.910 & 245.0 \\
+L: wide independent spread (session sd 12) & Offline optimum & 202.9 & 0.991 & 0.953 & 0.0 \\
+L: wide independent spread (session sd 12) & TAP & 206.2 & 0.927 & 0.953 & 34.3 \\
+L: wide independent spread (session sd 12) & Timetable + known timing & 210.8 & 0.983 & 0.962 & 22.3 \\
+L: wide independent spread (session sd 12) & Timetable + learned timing (prior) & 210.9 & 0.967 & 0.966 & 29.5 \\
+L: wide independent spread (session sd 12) & Reactive, SLO-floor tuned & 478.8 & 0.985 & 0.998 & 582.2 \\
+L: wide independent spread (session sd 12) & Token velocity, SLO-floor tuned & 210.5 & 0.778 & 0.937 & 201.2 \\
+\bottomrule
+\end{tabular}

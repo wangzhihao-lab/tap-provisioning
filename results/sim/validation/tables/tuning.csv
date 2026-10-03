@@ -1,0 +1,63 @@
+case,tuning,tree,trigger_offset,tuned_at,ratio,slo_floor,policy,config,grid_size,max_slo_tune,n_reach_floor,floor_reachable
+c1_7b_shared4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,0.9007048636750603,,
+c1_7b_shared4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=2, velocity_dwell_min=3",60,0.6331063508742603,,
+c1_7b_shared4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,0.9007048636750603,0.0,False
+c1_7b_shared4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=2, velocity_dwell_min=3",60,0.6331063508742603,0.0,False
+c1_7b_shared4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,1.0,54.0,True
+c1_7b_shared4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,1.0,60.0,True
+c1_7b_shared4k,tuning_r30,validation,0 0 0 0,d_rep,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,0.9921285660739558,,
+c1_7b_shared4k,tuning_r30,validation,0 0 0 0,d_rep,30,,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.8507316111019441,,
+c1_7b_shared4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,reactive,"hpa_up_util=0.4, hpa_down_util=0.1, hpa_cooldown_min=0, hpa_down_hold_min=5",54,0.9921285660739558,18.0,True
+c1_7b_shared4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.8507316111019441,0.0,False
+c2_32b_shared4k,tuning8_r100,validation,0 0 0 0,d_inst,100,,reactive,"hpa_up_util=0.7, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8658220158402304,,
+c2_32b_shared4k,tuning8_r100,validation,0 0 0 0,d_inst,100,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=1, velocity_dwell_min=15",60,0.4094445007432969,,
+c2_32b_shared4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8658220158402304,,
+c2_32b_shared4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=1, velocity_dwell_min=15",60,0.4108209204840244,,
+c2_32b_shared4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8658220158402304,0.0,False
+c2_32b_shared4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=1, velocity_dwell_min=15",60,0.4108209204840244,0.0,False
+c2_32b_shared4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,reactive,"hpa_up_util=0.4, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=5",54,0.9980884507265312,36.0,True
+c2_32b_shared4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,velocity,"velocity_window_min=5, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=1, velocity_dwell_min=15",60,0.872440309334396,0.0,False
+c2_32b_shared4k,tuning_r100,validation,0 0 0 0,d_rep,100,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.9762626799965076,,
+c2_32b_shared4k,tuning_r100,validation,0 0 0 0,d_rep,100,,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.689534566419614,,
+c2_32b_shared4k,tuning_r30,validation,0 0 0 0,d_rep,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=5",54,0.9762626799965076,,
+c2_32b_shared4k,tuning_r30,validation,0 0 0 0,d_rep,30,,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.6892543960128696,,
+c2_32b_shared4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,reactive,"hpa_up_util=0.4, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.9762626799965076,12.0,True
+c2_32b_shared4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.6892543960128696,0.0,False
+c2_32b_shared4k,tuning_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_rep,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,1.0,54.0,True
+c2_32b_shared4k,tuning_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_rep,30,0.95,velocity,"velocity_window_min=5, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=2, velocity_dwell_min=3",60,0.9994338194240764,40.0,True
+c3_72b_shared4k,tuning8_r100,validation,0 0 0 0,d_inst,100,,reactive,"hpa_up_util=0.4, hpa_down_util=0.1, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8487048632613422,,
+c3_72b_shared4k,tuning8_r100,validation,0 0 0 0,d_inst,100,,velocity,"velocity_window_min=10, velocity_clip=4.0, velocity_hysteresis=True, velocity_persist_min=1, velocity_dwell_min=15",60,0.355962530530949,,
+c3_72b_shared4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8487048632613422,,
+c3_72b_shared4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.355962530530949,,
+c3_72b_shared4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8487048632613422,0.0,False
+c3_72b_shared4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.355962530530949,0.0,False
+c3_72b_shared4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,reactive,"hpa_up_util=0.4, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=5",54,0.9947856039909728,29.0,True
+c3_72b_shared4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,velocity,"velocity_window_min=5, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.7077036030268318,0.0,False
+c3_72b_shared4k,tuning_r100,validation,0 0 0 0,d_rep,100,,reactive,"hpa_up_util=0.7, hpa_down_util=0.1, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.9353922424968356,,
+c3_72b_shared4k,tuning_r100,validation,0 0 0 0,d_rep,100,,velocity,"velocity_window_min=10, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.5538298680774358,,
+c3_72b_shared4k,tuning_r30,validation,0 0 0 0,d_rep,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.9353922424968356,,
+c3_72b_shared4k,tuning_r30,validation,0 0 0 0,d_rep,30,,velocity,"velocity_window_min=10, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.5522367652991413,,
+c3_72b_shared4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.9353922424968356,0.0,False
+c3_72b_shared4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,velocity,"velocity_window_min=10, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.5522367652991413,0.0,False
+c3_72b_shared4k,tuning_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_rep,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,1.0,54.0,True
+c3_72b_shared4k,tuning_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_rep,30,0.95,velocity,"velocity_window_min=5, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.9578623669050856,8.0,True
+c4_32b_unique2k,tuning8_r30,validation,0 0 0 0,d_inst,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8185729263541492,,
+c4_32b_unique2k,tuning8_r30,validation,0 0 0 0,d_inst,30,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.2644656796496818,,
+c4_32b_unique2k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8185729263541492,0.0,False
+c4_32b_unique2k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.2644656796496818,0.0,False
+c4_32b_unique2k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,reactive,"hpa_up_util=0.2, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=5",54,0.9797999585980754,17.0,True
+c4_32b_unique2k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,velocity,"velocity_window_min=5, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.394289159462434,0.0,False
+c4_32b_unique2k,tuning_r30,validation,0 0 0 0,d_rep,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,0.9497694343124894,,
+c4_32b_unique2k,tuning_r30,validation,0 0 0 0,d_rep,30,,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.4408085332049571,,
+c4_32b_unique2k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=5",54,0.9497694343124894,0.0,False
+c4_32b_unique2k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,velocity,"velocity_window_min=2, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.4408085332049571,0.0,False
+c5_72b_unique4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8115754774246686,,
+c5_72b_unique4k,tuning8_r30,validation,0 0 0 0,d_inst,30,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.2385128030216011,,
+c5_72b_unique4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=0, hpa_down_hold_min=45",54,0.8115754774246686,0.0,False
+c5_72b_unique4k,tuning8_r30_slo95,validation,0 0 0 0,d_inst,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.2385128030216011,0.0,False
+c5_72b_unique4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,reactive,"hpa_up_util=0.2, hpa_down_util=0.2, hpa_cooldown_min=0, hpa_down_hold_min=15",54,0.9627925296837192,4.0,True
+c5_72b_unique4k,tuning8_r30_slo95disp,validation2,-8.7 5.3 4.0 0.0,d_inst,30,0.95,velocity,"velocity_window_min=5, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.2994263189548986,0.0,False
+c5_72b_unique4k,tuning_r30,validation,0 0 0 0,d_rep,30,,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.8918679296856912,,
+c5_72b_unique4k,tuning_r30,validation,0 0 0 0,d_rep,30,,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.3974930857743785,,
+c5_72b_unique4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,reactive,"hpa_up_util=0.7, hpa_down_util=0.3, hpa_cooldown_min=3, hpa_down_hold_min=45",54,0.8918679296856912,0.0,False
+c5_72b_unique4k,tuning_r30_slo95,validation,0 0 0 0,d_rep,30,0.95,velocity,"velocity_window_min=30, velocity_clip=4.0, velocity_hysteresis=False, velocity_persist_min=2, velocity_dwell_min=3",60,0.3974930857743785,0.0,False

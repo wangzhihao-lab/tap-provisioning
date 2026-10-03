@@ -1,0 +1,154 @@
+{
+  "source": "results/q1/assistant (batch A)",
+  "adoption": {
+    "ds_prompted": {
+      "roster": 125,
+      "days": 17,
+      "median": 0.872,
+      "min": 0.704,
+      "max": 0.952,
+      "students_median": 109.0
+    },
+    "dsv_lab": {
+      "roster": 185,
+      "days": 4,
+      "median": 0.595,
+      "min": 0.568,
+      "max": 0.632,
+      "students_median": 110.0
+    }
+  },
+  "questions_per_student_per_class": {
+    "ds_prompted": {
+      "median": 3.0,
+      "mean": 3.078,
+      "p90": 5.2
+    },
+    "dsv_lab": {
+      "median": 2.0,
+      "mean": 1.971,
+      "p90": 3.0
+    }
+  },
+  "student_turn_gap_s": {
+    "dsv_lab": {
+      "median": 121.5,
+      "p75": 346.5,
+      "n": 428
+    },
+    "ds_prompted": {
+      "median": 118.5,
+      "p75": 313.2,
+      "n": 2972
+    },
+    "ds_offclass": {
+      "median": 295.0,
+      "p75": 1192.5,
+      "n": 2634
+    }
+  },
+  "response_gap_s": {
+    "dsv_lab": {
+      "median": 18.0,
+      "n": 715
+    },
+    "ds_prompted": {
+      "median": 18.0,
+      "n": 4894
+    },
+    "ds_offclass": {
+      "median": 18.0,
+      "n": 3596
+    }
+  },
+  "student_msg_chars": {
+    "dsv_lab": {
+      "median": 63.0,
+      "p90": 82.1
+    },
+    "ds_prompted": {
+      "median": 58.0,
+      "p90": 91.9
+    },
+    "ds_offclass": {
+      "median": 57.0,
+      "p90": 79.0
+    }
+  },
+  "assistant_msg_chars": {
+    "dsv_lab": {
+      "median": 158.0,
+      "p90": 209.0
+    },
+    "ds_prompted": {
+      "median": 281.0,
+      "p90": 298.0
+    },
+    "ds_offclass": {
+      "median": 280.0,
+      "p90": 296.0
+    }
+  },
+  "prompted_bursts": {
+    "n_bursts": 24,
+    "n_days": 16,
+    "sigma_2_min": 0.4,
+    "sigma_2_median": 0.832,
+    "sigma_2_max": 1.0,
+    "ramp_10_90_min": {
+      "n": 24,
+      "median": 1.806,
+      "mean": 1.851,
+      "p90": 2.4,
+      "max": 3.328
+    }
+  },
+  "sessions_per_student_semester": {
+    "n": 110,
+    "median": 14.0,
+    "mean": 14.455,
+    "p90": 27.1,
+    "max": 45.0
+  },
+  "deadlines": [
+    "2026-03-23 23:59:00",
+    "2026-04-06 23:59:00",
+    "2026-04-20 23:59:00",
+    "2026-05-04 23:59:00",
+    "2026-05-18 23:59:00",
+    "2026-06-01 23:59:00",
+    "2026-06-15 23:59:00",
+    "2026-06-29 23:59:00"
+  ],
+  "deadline_window": {
+    "sessions_in_window": 989,
+    "sessions_outside": 601,
+    "per_hour_in_window": 1.717,
+    "per_hour_outside": 0.284,
+    "window_hours": 576.0,
+    "record_hours": 2694.6
+  },
+  "monday_sessions": {
+    "2026-03-16": 3,
+    "2026-03-23": 60,
+    "2026-03-30": 2,
+    "2026-04-06": 57,
+    "2026-04-13": 3,
+    "2026-04-20": 57,
+    "2026-04-27": 3,
+    "2026-05-04": 55,
+    "2026-05-11": 3,
+    "2026-05-18": 56,
+    "2026-05-25": 2,
+    "2026-06-01": 56,
+    "2026-06-08": 3,
+    "2026-06-15": 60,
+    "2026-06-22": 16,
+    "2026-06-29": 94
+  },
+  "offclass_roster": 110,
+  "pool_rows": {
+    "prompted_ai_offsets_min.csv": 1533,
+    "selfpaced_ai_offsets_min.csv": 442
+  }
+}

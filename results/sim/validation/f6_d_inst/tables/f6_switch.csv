@@ -1,0 +1,4 @@
+price_ratio,eps,observed_switch_scale,observed_switch_scale_net,predicted_switch_scale_net,required_factor,max_plan_over_robust_net,plan_over_robust_total,switch_below_1
+30.0,0.1,none,none,none,40.0,1.9232515732613342,1.667923718579681,none
+30.0,0.5,none,none,none,8.0,1.9232515732613342,1.667923718579681,none
+30.0,1.0,none,none,none,4.0,1.9232515732613342,1.667923718579681,none

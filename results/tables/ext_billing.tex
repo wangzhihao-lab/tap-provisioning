@@ -1,0 +1,44 @@
+\begin{table*}[t]
+  \centering
+  \caption{Billing a replica start from its order.}
+  \label{tab:ext-billing}
+  \footnotesize
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{@{}lrrrrrr@{}}
+    \toprule
+    & \multicolumn{3}{c}{From the order, $\beta=c\,d$} & \multicolumn{3}{c}{Main runs, $\beta=c$} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+    Policy & GPU-h/wk & vs.\ TAP & $S^{\mathrm{in}}$ & GPU-h/wk & vs.\ TAP & $S^{\mathrm{in}}$ \\
+    \midrule
+    \multicolumn{7}{@{}l}{\emph{32B (c2), instance tier}} \\
+    TAP & 193.7 & --- & 0.981 & 187.4 & --- & 0.991 \\
+    Timetable + learned timing (prior) & 197.5 & $+$2.0\% & 0.992 & 190.3 & $+$1.6\% & 0.997 \\
+    Timetable, known timing & 198.4 & $+$2.5\% & 0.997 & 190.8 & $+$1.9\% & 0.998 \\
+    Reactive (HPA) & 300.5 & $+$55.2\% & 0.935 & 296.4 & $+$58.2\% & 0.935 \\
+    Token velocity & 201.3 & $+$4.0\% & 0.501 & 193.5 & $+$3.3\% & 0.501 \\
+    Base tier only & 168.0 & $-$13.2\% & 0.305 & 168.0 & $-$10.3\% & 0.305 \\
+    Reactive, SLO-floor tuned & 296.0 & $+$52.8\% & 0.959 & 273.9 & $+$46.2\% & 0.959 \\
+    Token velocity, SLO-floor tuned & 215.8 & $+$11.4\% & 0.717 & 196.7 & $+$5.0\% & 0.750 \\
+    \addlinespace
+    \multicolumn{7}{@{}l}{\emph{72B (c3), instance tier}} \\
+    TAP & 219.4 & --- & 0.968 & 208.6 & --- & 0.975 \\
+    Timetable + learned timing (prior) & 225.9 & $+$3.0\% & 0.992 & 213.7 & $+$2.4\% & 0.994 \\
+    Timetable, known timing & 227.5 & $+$3.7\% & 0.997 & 214.2 & $+$2.6\% & 0.997 \\
+    Reactive (HPA) & 391.4 & $+$78.4\% & 0.906 & 384.0 & $+$84.1\% & 0.906 \\
+    Token velocity & 231.1 & $+$5.3\% & 0.367 & 216.0 & $+$3.5\% & 0.455 \\
+    Base tier only & 168.0 & $-$23.4\% & 0.192 & 168.0 & $-$19.5\% & 0.192 \\
+    Reactive, SLO-floor tuned & 539.7 & $+$146.0\% & 0.960 & 491.6 & $+$135.6\% & 0.984 \\
+    Token velocity, SLO-floor tuned & 252.2 & $+$15.0\% & 0.603 & 221.5 & $+$6.2\% & 0.622 \\
+    \addlinespace
+    \multicolumn{7}{@{}l}{\emph{72B (c3), replica tier}} \\
+    TAP & 210.2 & --- & 0.974 & 208.6 & --- & 0.975 \\
+    Timetable + learned timing (prior) & 215.5 & $+$2.5\% & 0.994 & 213.7 & $+$2.4\% & 0.994 \\
+    Timetable, known timing & 216.1 & $+$2.8\% & 0.997 & 214.2 & $+$2.6\% & 0.997 \\
+    Reactive (HPA) & 361.9 & $+$72.1\% & 0.996 & 360.9 & $+$73.0\% & 0.996 \\
+    Token velocity & 215.7 & $+$2.6\% & 0.915 & 211.8 & $+$1.5\% & 0.915 \\
+    Base tier only & 168.0 & $-$20.1\% & 0.192 & 168.0 & $-$19.5\% & 0.192 \\
+    Reactive, SLO-floor tuned & 291.1 & $+$38.5\% & 0.994 & 288.9 & $+$38.5\% & 0.994 \\
+    Token velocity, SLO-floor tuned & 221.6 & $+$5.4\% & 0.953 & 214.6 & $+$2.8\% & 0.953 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

@@ -1,0 +1,40 @@
+[project]
+name = "tap-provisioning"
+version = "0.1.0"
+description = "Timetable-aware provisioning (TAP) for LLM teaching-assistant services: simulator, policies and analysis scripts"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2", "numpy>=1.26", "scipy>=1.11", "matplotlib>=3.8", "openpyxl>=3.1", "xlrd>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5", "mypy>=1.10"]
+
+[project.scripts]
+pilot = "pilot.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+# Pinned on purpose: ruff >= 0.16 enables its whole catalogue by default, which would flag the
+# typing.Dict/Optional annotations (UP006/UP035) and the long lines (E501) used throughout.
+select = ["E4", "E7", "E9", "F", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning:matplotlib.*"]
+
+[dependency-groups]
+dev = [
+    "aiohttp>=3.9",
+    "requests>=2.31",
+    "pytest>=8.0",
+]
+

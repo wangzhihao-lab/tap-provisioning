@@ -1,0 +1,17 @@
+The derived data in this directory (data/timetable, data/offsets) and the result
+tables under results/ are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0).
+
+Copyright (c) 2026 Zhihao Wang, Min Ren, Yuanyuan Liu, Gaoyong Li, Ding Ding
+
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:      https://creativecommons.org/licenses/by/4.0/
+
+Third-party sources keep their own terms:
+- data/tokens/azure_conv_tokens.csv holds the two token-length columns of the
+  Azure LLM inference trace 2023 (conversation), from the Azure Public Dataset
+  (https://github.com/Azure/AzurePublicDataset), released by Microsoft under
+  CC BY 4.0.
+- data/offsets/assistments_inclass_offsets_min.csv is derived from the public
+  ASSISTments 2012-2013 skill-builder data; see README.md for how to obtain the
+  original data and the terms of its use.

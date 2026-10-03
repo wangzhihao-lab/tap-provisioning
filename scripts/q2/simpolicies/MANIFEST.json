@@ -1,0 +1,66 @@
+{
+  "schema": "q2.simpolicies.manifest.v1",
+  "generator": "scripts/q2/vendor_policies.py",
+  "generated_at": "2026-10-03T01:17:04-0700",
+  "sim_dir": "src/pilot/sim",
+  "sources": {
+    "config.py": {
+      "path": "src/pilot/sim/config.py",
+      "sha256": "d42604c034925ded3f357d7d2a618255236c3944f8d6885413f1f70216566be8"
+    },
+    "base.py": {
+      "path": "src/pilot/sim/policies/base.py",
+      "sha256": "4ee74fe209bbeb4a7d7f134aa5fde39e96f98031db8cf411f58bcfa85a406a7e"
+    },
+    "reactive.py": {
+      "path": "src/pilot/sim/policies/reactive.py",
+      "sha256": "3ef4d525ab54b66fb83ec645ee88f22fd7985c6a3a2d9538f08bb192321b331c"
+    },
+    "velocity.py": {
+      "path": "src/pilot/sim/policies/velocity.py",
+      "sha256": "82f3ef443f89bf93d50b7e00a0232be81838cbb299bcefee36173de42c09d985"
+    }
+  },
+  "generated": {
+    "config.py": {
+      "sha256": "d42604c034925ded3f357d7d2a618255236c3944f8d6885413f1f70216566be8",
+      "source": "src/pilot/sim/config.py",
+      "source_sha256": "d42604c034925ded3f357d7d2a618255236c3944f8d6885413f1f70216566be8",
+      "rewrites": []
+    },
+    "base.py": {
+      "sha256": "e3113d3e1cc9269ad0bcde1ae796a1e2910219f0405ebd876be19248eee368fa",
+      "source": "src/pilot/sim/policies/base.py",
+      "source_sha256": "4ee74fe209bbeb4a7d7f134aa5fde39e96f98031db8cf411f58bcfa85a406a7e",
+      "rewrites": [
+        "from ..config import -> from .config import"
+      ]
+    },
+    "reactive.py": {
+      "sha256": "0907eee13178fe0d8b5f9626a1cd4783fa57c33e9cbd23565bbcafaa41d082f4",
+      "source": "src/pilot/sim/policies/reactive.py",
+      "source_sha256": "3ef4d525ab54b66fb83ec645ee88f22fd7985c6a3a2d9538f08bb192321b331c",
+      "rewrites": [
+        "from .. import register_policy -> from . import register_policy"
+      ]
+    },
+    "velocity.py": {
+      "sha256": "618a25c860436c73a062183716155607cbe390272d6f5d085b0dd9cac5a79238",
+      "source": "src/pilot/sim/policies/velocity.py",
+      "source_sha256": "82f3ef443f89bf93d50b7e00a0232be81838cbb299bcefee36173de42c09d985",
+      "rewrites": [
+        "from .. import register_policy -> from . import register_policy"
+      ]
+    },
+    "__init__.py": {
+      "sha256": "4f960c7006362d20dee3bc4b73b8882809bb79e59a74d94d702ef1b14f3483ac",
+      "source": null,
+      "source_sha256": null,
+      "rewrites": []
+    }
+  },
+  "rewrites": [
+    "from .. import register_policy -> from . import register_policy",
+    "from ..config import -> from .config import"
+  ]
+}

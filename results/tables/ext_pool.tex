@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Round & \multicolumn{2}{c}{Share within 2\,s} & \multicolumn{2}{c}{Replica-minutes} & \multicolumn{2}{c}{TTFT p95 (s)} & Minutes \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & GPU & sim. & GPU & sim. & GPU & sim. & equal \\
+\midrule
+planner, instance tier & 0.869 & 0.857 & 99 & 99 & 11.8 & 13.1 & 45 \\
+planner, replica tier & 0.906 & 0.857 & 99 & 99 & 9.5 & 13.1 & 45 \\
+offline optimum, replica tier & 0.968 & 0.943 & 91 & 91 & 1.5 & 2.2 & 45 \\
+token velocity, instance tier & 0.630 & 0.624 & 127 & 127 & 59.8 & 59.8 & 45 \\
+token velocity, replica tier & 0.832 & 0.765 & 90 & 91 & 4.4 & 13.1 & 44 \\
+reactive, instance tier & 0.612 & 0.606 & 173 & 173 & 59.8 & 59.8 & 45 \\
+reactive, replica tier & 0.939 & 0.918 & 154 & 154 & 2.8 & 6.6 & 45 \\
+\bottomrule
+\end{tabular}

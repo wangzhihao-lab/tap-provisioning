@@ -1,0 +1,40 @@
+\begin{tabular}{@{}llllp{0.42\textwidth}r@{}}
+\toprule
+Case & Tier & Variant & Baseline & Configuration & Best attainment on the tuning slice \\
+\midrule
+c1 & inst & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 0.901 \\
+c1 & inst & cost & Token velocity & window\_min=30, clip=4.0, hysteresis=True, persist\_min=2, dwell\_min=3 & 0.633 \\
+c1 & inst & floor & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 1.000 \\
+c1 & inst & floor & Token velocity & window\_min=30, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 1.000 \\
+c1 & rep & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 0.992 \\
+c1 & rep & cost & Token velocity & window\_min=2, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.851 \\
+c2 & inst & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.2, cooldown\_min=0, down\_hold\_min=45 & 0.866 \\
+c2 & inst & cost & Token velocity & window\_min=30, clip=4.0, hysteresis=True, persist\_min=1, dwell\_min=15 & 0.411 \\
+c2 & inst & floor & Reactive (HPA) & up\_util=0.4, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 1.000 \\
+c2 & inst & floor & Token velocity & window\_min=5, clip=4.0, hysteresis=True, persist\_min=2, dwell\_min=3 & 0.872 \\
+c2 & rep & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=0, down\_hold\_min=5 & 0.976 \\
+c2 & rep & cost & Token velocity & window\_min=2, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.689 \\
+c2 & rep & floor & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 1.000 \\
+c2 & rep & floor & Token velocity & window\_min=30, clip=4.0, hysteresis=True, persist\_min=2, dwell\_min=3 & 0.999 \\
+c3 & inst & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.2, cooldown\_min=0, down\_hold\_min=45 & 0.849 \\
+c3 & inst & cost & Token velocity & window\_min=30, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.356 \\
+c3 & inst & floor & Reactive (HPA) & up\_util=0.2, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 0.995 \\
+c3 & inst & floor & Token velocity & window\_min=5, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.725 \\
+c3 & rep & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=45 & 0.935 \\
+c3 & rep & cost & Token velocity & window\_min=10, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.552 \\
+c3 & rep & floor & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 1.000 \\
+c3 & rep & floor & Token velocity & window\_min=2, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.964 \\
+c4 & inst & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=0, down\_hold\_min=45 & 0.819 \\
+c4 & inst & cost & Token velocity & window\_min=30, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.264 \\
+c4 & inst & floor & Reactive (HPA) & up\_util=0.2, down\_util=0.3, cooldown\_min=0, down\_hold\_min=5 & 0.980 \\
+c4 & inst & floor & Token velocity & window\_min=5, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.394 \\
+c4 & rep & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=5 & 0.950 \\
+c4 & rep & cost & Token velocity & window\_min=2, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.441 \\
+c5 & inst & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=0, down\_hold\_min=45 & 0.812 \\
+c5 & inst & cost & Token velocity & window\_min=30, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.239 \\
+c5 & inst & floor & Reactive (HPA) & up\_util=0.2, down\_util=0.2, cooldown\_min=0, down\_hold\_min=15 & 0.963 \\
+c5 & inst & floor & Token velocity & window\_min=5, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.299 \\
+c5 & rep & cost & Reactive (HPA) & up\_util=0.7, down\_util=0.3, cooldown\_min=3, down\_hold\_min=45 & 0.892 \\
+c5 & rep & cost & Token velocity & window\_min=30, clip=4.0, hysteresis=False, persist\_min=2, dwell\_min=3 & 0.397 \\
+\bottomrule
+\end{tabular}

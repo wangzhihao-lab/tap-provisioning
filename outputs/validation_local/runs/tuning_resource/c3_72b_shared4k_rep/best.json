@@ -1,0 +1,147 @@
+{
+  "written": "2026-09-24T07:20:39+00:00",
+  "script": "scripts/sim/tune_baselines.py",
+  "objective": "mean run_cost + switch_cost over the tuning seeds among the cells whose mean slo_in reaches slo_floor (lower is better)",
+  "slice": {
+    "college": "ALL",
+    "weeks": 1,
+    "lead_tier": "d_rep",
+    "adoption": 1.0,
+    "sigma": 0.7,
+    "max_sections": 0,
+    "price_ratio": 30.0,
+    "slo_floor": 0.95,
+    "trigger_offset": [
+      -8.7,
+      5.3,
+      4.0,
+      0.0
+    ],
+    "slo_select": "resource"
+  },
+  "tuning_seeds": [
+    0,
+    1
+  ],
+  "heldout_seed": 2,
+  "policies": {
+    "reactive": {
+      "config": {
+        "hpa_up_util": 0.7,
+        "hpa_down_util": 0.3,
+        "hpa_cooldown_min": 3,
+        "hpa_down_hold_min": 5
+      },
+      "rank_of_default": 1,
+      "grid_size": 54,
+      "tuning": {
+        "cost_ratio_mean": 1.3474669379289668,
+        "cost_ratio_max": 1.358234120366585,
+        "slo_in_mean": 0.9938858736032009
+      },
+      "heldout": {
+        "cost_ratio": 1.371490188327196,
+        "slo_in": 0.9900268222239473,
+        "slo_first_in": 1.0,
+        "viol_in": 0.009973177776052666,
+        "gpu_hours": 265.43333333333334,
+        "starts": 115.0
+      },
+      "selection": {
+        "rule": "resource",
+        "slo_floor": 0.95,
+        "floor_met": true,
+        "eligible": 54,
+        "tuning_resource": {
+          "gpu_hours_mean": 262.89166666666665,
+          "starts_mean": 117.0,
+          "run_cost_mean": 525.25755,
+          "switch_cost_mean": 3.8961000000000006
+        },
+        "resource_cost_mean": 529.15365,
+        "cost_rule_config": {
+          "hpa_up_util": 0.7,
+          "hpa_down_util": 0.3,
+          "hpa_cooldown_min": 3,
+          "hpa_down_hold_min": 5
+        },
+        "same_as_cost_rule": true
+      },
+      "default": {
+        "hpa_up_util": 0.7,
+        "hpa_down_util": 0.3,
+        "hpa_cooldown_min": 3,
+        "hpa_down_hold_min": 5
+      },
+      "default_tuning": {
+        "cost_ratio_mean": 1.3474669379289668
+      },
+      "default_heldout": {
+        "cost_ratio": 1.371490188327196,
+        "slo_in": 0.9900268222239473,
+        "slo_first_in": 1.0
+      }
+    },
+    "velocity": {
+      "config": {
+        "velocity_window_min": 2,
+        "velocity_clip": 4.0,
+        "velocity_hysteresis": false,
+        "velocity_persist_min": 2,
+        "velocity_dwell_min": 3
+      },
+      "rank_of_default": 13,
+      "grid_size": 60,
+      "tuning": {
+        "cost_ratio_mean": 1.174586478686244,
+        "cost_ratio_max": 1.181278784076865,
+        "slo_in_mean": 0.9638664818346226
+      },
+      "heldout": {
+        "cost_ratio": 1.215857722213032,
+        "slo_in": 0.9386225766128585,
+        "slo_first_in": 0.9711701643279937,
+        "viol_in": 0.06137742338714147,
+        "gpu_hours": 199.71666666666667,
+        "starts": 383.0
+      },
+      "selection": {
+        "rule": "resource",
+        "slo_floor": 0.95,
+        "floor_met": true,
+        "eligible": 4,
+        "tuning_resource": {
+          "gpu_hours_mean": 199.56666666666666,
+          "starts_mean": 357.0,
+          "run_cost_mean": 398.73420000000004,
+          "switch_cost_mean": 11.888100000000001
+        },
+        "resource_cost_mean": 410.62230000000005,
+        "cost_rule_config": {
+          "velocity_window_min": 2,
+          "velocity_clip": 4.0,
+          "velocity_hysteresis": false,
+          "velocity_persist_min": 2,
+          "velocity_dwell_min": 3
+        },
+        "same_as_cost_rule": true
+      },
+      "default": {
+        "velocity_window_min": 2,
+        "velocity_clip": 4.0,
+        "velocity_hysteresis": true,
+        "velocity_persist_min": 2,
+        "velocity_dwell_min": 3
+      },
+      "default_tuning": {
+        "cost_ratio_mean": 1.1419311691464529
+      },
+      "default_heldout": {
+        "cost_ratio": 1.1961238028398211,
+        "slo_in": 0.9001002862832763,
+        "slo_first_in": 0.913758847634422
+      }
+    }
+  },
+  "slo_select": "resource"
+}

@@ -1,0 +1,9 @@
+# Runtime dependencies of the Q2 measurement scripts (scripts/q2).
+# Standalone: these scripts do not import pilot/src.
+# vLLM itself is NOT listed here; install it separately on the GPU box (see RUNBOOK.md),
+# because the CPU-only dry-run path must stay installable on a laptop.
+requests>=2.31
+aiohttp>=3.9        # replica_pool.py (batch B' step two); the box gets it with vLLM
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8

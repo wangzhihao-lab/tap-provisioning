@@ -1,0 +1,37 @@
+{
+  "note": "dry-run fixture for stage pool (fake replicas, --minute-s 6); the real pool_runs.json is written by make_bell_trace.py",
+  "dry_run": true,
+  "trace": "pool_inputs/dry_trace.csv",
+  "max_offset_s": 72,
+  "duration_min": 12,
+  "head_s": 10,
+  "minute_s": 6,
+  "abandon_s": 20,
+  "give_up_s": 20,
+  "replica_concurrency": 3,
+  "engine": "single",
+  "cold_start_s": [
+    3,
+    2
+  ],
+  "calib_multi": {
+    "replicas": 2,
+    "levels": "1,4",
+    "duration_s": 4
+  },
+  "runs": [
+    {
+      "label": "dry_plan_d_inst",
+      "policy": "plan",
+      "lead_gate_min": 8,
+      "context": "pool_inputs/context_dry_d_inst.json",
+      "plan": "pool_inputs/plan_dry.json"
+    },
+    {
+      "label": "dry_reactive_d_rep",
+      "policy": "reactive",
+      "lead_gate_min": 0,
+      "context": "pool_inputs/context_dry_d_rep.json"
+    }
+  ]
+}

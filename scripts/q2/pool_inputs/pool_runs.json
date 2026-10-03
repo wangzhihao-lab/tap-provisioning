@@ -1,0 +1,70 @@
+{
+ "trace": "pool_inputs/bell_c3_w3.csv",
+ "max_offset_s": 2700,
+ "duration_min": 45,
+ "head_s": 240,
+ "calib_multi": {
+  "replicas": 5,
+  "levels": "8,16,24,32,40",
+  "duration_s": 30
+ },
+ "abandon_s": 60.0,
+ "give_up_s": 60.0,
+ "max_replicas": 5,
+ "gpu_frac": 0.19,
+ "engine": "single",
+ "cold_start_s": [
+  40.1,
+  29.1,
+  28.1,
+  29.1,
+  28.1
+ ],
+ "runs": [
+  {
+   "label": "plan_learnprior_d_inst",
+   "policy": "plan",
+   "lead_gate_min": 8,
+   "context": "pool_inputs/context_d_inst_plan.json",
+   "plan": "pool_inputs/plan_learnprior.json"
+  },
+  {
+   "label": "velocity_d_inst",
+   "policy": "velocity",
+   "lead_gate_min": 8,
+   "context": "pool_inputs/context_d_inst_velocity.json"
+  },
+  {
+   "label": "plan_offline",
+   "policy": "plan",
+   "lead_gate_min": 0,
+   "context": "pool_inputs/context_d_rep_plan.json",
+   "plan": "pool_inputs/plan_offline.json"
+  },
+  {
+   "label": "plan_learnprior_d_rep",
+   "policy": "plan",
+   "lead_gate_min": 0,
+   "context": "pool_inputs/context_d_rep_plan.json",
+   "plan": "pool_inputs/plan_learnprior.json"
+  },
+  {
+   "label": "velocity_d_rep",
+   "policy": "velocity",
+   "lead_gate_min": 0,
+   "context": "pool_inputs/context_d_rep_velocity.json"
+  },
+  {
+   "label": "reactive_d_inst",
+   "policy": "reactive",
+   "lead_gate_min": 8,
+   "context": "pool_inputs/context_d_inst_reactive.json"
+  },
+  {
+   "label": "reactive_d_rep",
+   "policy": "reactive",
+   "lead_gate_min": 0,
+   "context": "pool_inputs/context_d_rep_reactive.json"
+  }
+ ]
+}

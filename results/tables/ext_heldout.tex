@@ -1,0 +1,33 @@
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Prior from & Policy & GPU-h/wk & $S^{\mathrm{in}}$ & $S^{\mathrm{off}}$ & Excess USD/wk \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{32B (c2)}} \\
+2026-27 sem. 1 (symmetric) & Offline optimum & 188.1 & 0.997 & 0.990 & 0.0 \\
+2026-27 sem. 1 (symmetric) & TAP & 191.1 & 0.994 & 0.993 & 13.0 \\
+2026-27 sem. 1 (symmetric) & Timetable + known timing & 195.1 & 0.998 & 0.991 & 13.1 \\
+2026-27 sem. 1 (symmetric) & Timetable + learned timing (prior) & 194.7 & 0.999 & 0.995 & 14.4 \\
+2026-27 sem. 1 (symmetric) & Reactive, SLO-floor tuned & 291.8 & 0.954 & 0.997 & 241.1 \\
+2026-27 sem. 1 (symmetric) & Token velocity, SLO-floor tuned & 199.7 & 0.723 & 0.943 & 157.2 \\
+2025-26 sem. 1 (forward) & Offline optimum & 188.1 & 0.997 & 0.990 & 0.0 \\
+2025-26 sem. 1 (forward) & TAP & 191.1 & 0.994 & 0.993 & 13.0 \\
+2025-26 sem. 1 (forward) & Timetable + known timing & 195.1 & 0.998 & 0.991 & 13.1 \\
+2025-26 sem. 1 (forward) & Timetable + learned timing (prior) & 194.7 & 0.999 & 0.995 & 14.4 \\
+2025-26 sem. 1 (forward) & Reactive, SLO-floor tuned & 291.8 & 0.954 & 0.997 & 241.1 \\
+2025-26 sem. 1 (forward) & Token velocity, SLO-floor tuned & 199.7 & 0.723 & 0.943 & 157.2 \\
+\addlinespace
+\multicolumn{6}{@{}l}{\emph{72B (c3)}} \\
+2026-27 sem. 1 (symmetric) & Offline optimum & 210.3 & 0.995 & 0.972 & 0.0 \\
+2026-27 sem. 1 (symmetric) & TAP & 215.6 & 0.979 & 0.986 & 27.7 \\
+2026-27 sem. 1 (symmetric) & Timetable + known timing & 221.9 & 0.998 & 0.979 & 21.9 \\
+2026-27 sem. 1 (symmetric) & Timetable + learned timing (prior) & 221.6 & 0.997 & 0.990 & 26.1 \\
+2026-27 sem. 1 (symmetric) & Reactive, SLO-floor tuned & 528.6 & 0.983 & 0.999 & 678.0 \\
+2026-27 sem. 1 (symmetric) & Token velocity, SLO-floor tuned & 222.3 & 0.612 & 0.883 & 320.3 \\
+2025-26 sem. 1 (forward) & Offline optimum & 210.3 & 0.995 & 0.972 & 0.0 \\
+2025-26 sem. 1 (forward) & TAP & 215.6 & 0.979 & 0.986 & 27.7 \\
+2025-26 sem. 1 (forward) & Timetable + known timing & 221.9 & 0.998 & 0.979 & 21.9 \\
+2025-26 sem. 1 (forward) & Timetable + learned timing (prior) & 221.6 & 0.997 & 0.990 & 26.1 \\
+2025-26 sem. 1 (forward) & Reactive, SLO-floor tuned & 528.6 & 0.983 & 0.999 & 678.0 \\
+2025-26 sem. 1 (forward) & Token velocity, SLO-floor tuned & 222.3 & 0.612 & 0.883 & 320.3 \\
+\bottomrule
+\end{tabular}

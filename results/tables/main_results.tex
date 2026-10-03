@@ -1,0 +1,28 @@
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{32B, replica} & \multicolumn{2}{c}{32B, instance} & \multicolumn{2}{c}{72B, replica} & \multicolumn{2}{c@{}}{72B, instance} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+Policy & GPU-h & $S^{\mathrm{in}}$ & GPU-h & $S^{\mathrm{in}}$ & GPU-h & $S^{\mathrm{in}}$ & GPU-h & $S^{\mathrm{in}}$ \\
+\midrule
+Offline optimum & 184.1 & 0.996 & 184.1 & 0.996 & 203.1 & 0.994 & 203.1 & 0.994 \\
+Informed optimum & 184.1 & 0.996 & 188.1 & 0.983 & 204.4 & 0.994 & 210.2 & 0.981 \\
+\addlinespace[1pt]
+TAP & 186.3 & 0.991 & 186.3 & 0.991 & 207.0 & 0.975 & 207.0 & 0.975 \\
+Timetable, known timing & 189.6 & 0.998 & 189.6 & 0.998 & 212.1 & 0.997 & 212.1 & 0.997 \\
++ size correction & 186.7 & 0.997 & 186.7 & 0.997 & 207.4 & 0.990 & 207.4 & 0.990 \\
++ learned timing, prior & 189.1 & 0.997 & 189.1 & 0.997 & 211.8 & 0.994 & 211.8 & 0.994 \\
++ learned timing, no prior & 189.7 & 0.941 & 189.7 & 0.941 & 212.6 & 0.928 & 212.6 & 0.928 \\
+\addlinespace[1pt]
+Last semester's timetable & 195.7 & 0.996 & 195.7 & 0.996 & 223.1 & 0.983 & 223.1 & 0.983 \\
+History + ILP & 191.0 & 0.866 & 200.0 & 0.858 & 225.2 & 0.801 & 229.4 & 0.790 \\
+Bell-aware guard & 242.6 & 0.999 & 261.8 & 0.985 & 296.3 & 0.980 & 322.5 & 0.968 \\
+LCP & 185.0 & 0.920 & 185.0 & 0.508 & 204.9 & 0.608 & 204.9 & 0.411 \\
+\addlinespace[1pt]
+Reactive, cost-tuned & 237.7 & 1.000 & 295.8 & 0.935 & 360.0 & 0.996 & 383.0 & 0.906 \\
+Reactive, floor-tuned & 237.3 & 1.000 & 270.7 & 0.959 & 286.7 & 0.994 & 477.2 & 0.984 \\
+Token velocity, cost-tuned & 186.8 & 0.998 & 192.3 & 0.501 & 207.9 & 0.915 & 211.9 & 0.455 \\
+Token velocity, floor-tuned & 187.1 & 0.978 & 193.9 & 0.750 & 207.6 & 0.953 & 212.8 & 0.622 \\
+\addlinespace[1pt]
+Base tier only & 168.0 & 0.305 & 168.0 & 0.305 & 168.0 & 0.192 & 168.0 & 0.192 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,22 @@
+{
+  "case": "c3_72b_shared4k",
+  "seed": 10,
+  "week": 3,
+  "bell_min": 22440,
+  "lead_min": 8.0,
+  "ratio": 30.0,
+  "mu_req_min": 265.72750748251167,
+  "seats_at_bell": 12557,
+  "whole_run_slo_in": {
+    "offline": 0.993028562436069,
+    "velocity": 0.48881160332572715,
+    "reactive": 0.9384074278070659,
+    "calendar_learn_prior": 0.9923864977574947
+  },
+  "whole_run_gpu_hours": {
+    "offline": 579.8666666666667,
+    "velocity": 604.5,
+    "reactive": 1034.6166666666666,
+    "calendar_learn_prior": 601.2833333333333
+  }
+}

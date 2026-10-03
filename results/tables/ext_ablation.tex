@@ -1,0 +1,39 @@
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Setting & Policy & GPU-h/wk & USD/wk & $S^{\mathrm{in}}$ & $S^{\mathrm{off}}$ & Timeouts per $10^6$ \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{32B (c2)}} \\
+graded, priority on (main) & Offline optimum & 184.1 & 372.9 & 0.996 & 0.985 & 0 \\
+graded, priority on (main) & TAP & 186.3 & 383.6 & 0.991 & 0.986 & 20 \\
+graded, priority on (main) & Timetable + learned timing (prior) & 189.1 & 384.2 & 0.997 & 0.990 & 0 \\
+graded, priority on (main) & Timetable + online size correction & 186.7 & 379.6 & 0.997 & 0.989 & 0 \\
+graded, priority on (main) & Reactive, SLO-floor tuned & 270.7 & 570.3 & 0.959 & 0.998 & 923 \\
+graded, priority off & Offline optimum & 184.1 & 372.9 & 0.996 & 0.987 & 64 \\
+graded, priority off & TAP & 186.3 & 383.6 & 0.991 & 0.989 & 119 \\
+graded, priority off & Timetable + learned timing (prior) & 189.1 & 384.2 & 0.997 & 0.992 & 60 \\
+graded, priority off & Timetable + online size correction & 186.7 & 379.6 & 0.997 & 0.991 & 38 \\
+graded, priority off & Reactive, SLO-floor tuned & 270.7 & 570.3 & 0.959 & 0.998 & 965 \\
+flat penalty, priority on & Offline optimum & 186.7 & 376.7 & 1.000 & 1.000 & 0 \\
+flat penalty, priority on & TAP & 189.0 & 390.5 & 0.998 & 1.000 & 12 \\
+flat penalty, priority on & Timetable + learned timing (prior) & 192.1 & 390.7 & 1.000 & 1.000 & 0 \\
+flat penalty, priority on & Timetable + online size correction & 189.3 & 385.3 & 1.000 & 1.000 & 0 \\
+flat penalty, priority on & Reactive, SLO-floor tuned & 270.7 & 576.4 & 0.959 & 0.998 & 923 \\
+\addlinespace
+\multicolumn{7}{@{}l}{\emph{72B (c3)}} \\
+graded, priority on (main) & Offline optimum & 203.1 & 414.6 & 0.994 & 0.964 & 0 \\
+graded, priority on (main) & TAP & 207.0 & 436.6 & 0.975 & 0.973 & 72 \\
+graded, priority on (main) & Timetable + learned timing (prior) & 211.8 & 435.6 & 0.994 & 0.979 & 1 \\
+graded, priority on (main) & Timetable + online size correction & 207.4 & 427.7 & 0.990 & 0.964 & 8 \\
+graded, priority on (main) & Reactive, SLO-floor tuned & 477.2 & 995.9 & 0.984 & 0.999 & 189 \\
+graded, priority off & Offline optimum & 203.1 & 414.6 & 0.995 & 0.966 & 122 \\
+graded, priority off & TAP & 207.0 & 436.6 & 0.975 & 0.975 & 106 \\
+graded, priority off & Timetable + learned timing (prior) & 211.8 & 435.6 & 0.995 & 0.980 & 53 \\
+graded, priority off & Timetable + online size correction & 207.4 & 427.7 & 0.990 & 0.966 & 120 \\
+graded, priority off & Reactive, SLO-floor tuned & 477.2 & 995.9 & 0.984 & 0.999 & 214 \\
+flat penalty, priority on & Offline optimum & 207.5 & 420.4 & 1.000 & 1.000 & 0 \\
+flat penalty, priority on & TAP & 211.2 & 449.2 & 0.993 & 0.998 & 22 \\
+flat penalty, priority on & Timetable + learned timing (prior) & 216.2 & 445.5 & 0.999 & 0.999 & 0 \\
+flat penalty, priority on & Timetable + online size correction & 211.4 & 437.3 & 1.000 & 0.999 & 0 \\
+flat penalty, priority on & Reactive, SLO-floor tuned & 477.2 & 1000.0 & 0.984 & 0.999 & 189 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,147 @@
+{
+  "written": "2026-09-24T06:04:53+00:00",
+  "script": "scripts/sim/tune_baselines.py",
+  "objective": "mean run_cost + switch_cost over the tuning seeds among the cells whose mean slo_in reaches slo_floor (lower is better)",
+  "slice": {
+    "college": "ALL",
+    "weeks": 1,
+    "lead_tier": "d_inst",
+    "adoption": 1.0,
+    "sigma": 0.7,
+    "max_sections": 0,
+    "price_ratio": 30.0,
+    "slo_floor": 0.95,
+    "trigger_offset": [
+      -8.7,
+      5.3,
+      4.0,
+      0.0
+    ],
+    "slo_select": "resource"
+  },
+  "tuning_seeds": [
+    0,
+    1
+  ],
+  "heldout_seed": 2,
+  "policies": {
+    "reactive": {
+      "config": {
+        "hpa_up_util": 0.4,
+        "hpa_down_util": 0.1,
+        "hpa_cooldown_min": 0,
+        "hpa_down_hold_min": 5
+      },
+      "rank_of_default": 1,
+      "grid_size": 54,
+      "tuning": {
+        "cost_ratio_mean": 2.2279342146319365,
+        "cost_ratio_max": 2.2316640753694674,
+        "slo_in_mean": 0.9552276040238145
+      },
+      "heldout": {
+        "cost_ratio": 2.2686742883089286,
+        "slo_in": 0.9538207806487081,
+        "slo_first_in": 1.0,
+        "viol_in": 0.04617921935129188,
+        "gpu_hours": 433.15,
+        "starts": 223.0
+      },
+      "selection": {
+        "rule": "resource",
+        "slo_floor": 0.95,
+        "floor_met": true,
+        "eligible": 22,
+        "tuning_resource": {
+          "gpu_hours_mean": 430.69166666666666,
+          "starts_mean": 204.5,
+          "run_cost_mean": 860.5219500000001,
+          "switch_cost_mean": 54.47880000000001
+        },
+        "resource_cost_mean": 915.0007500000002,
+        "cost_rule_config": {
+          "hpa_up_util": 0.4,
+          "hpa_down_util": 0.1,
+          "hpa_cooldown_min": 0,
+          "hpa_down_hold_min": 5
+        },
+        "same_as_cost_rule": true
+      },
+      "default": {
+        "hpa_up_util": 0.7,
+        "hpa_down_util": 0.3,
+        "hpa_cooldown_min": 3,
+        "hpa_down_hold_min": 5
+      },
+      "default_tuning": {
+        "cost_ratio_mean": 1.6280253712577155
+      },
+      "default_heldout": {
+        "cost_ratio": 1.609703297068031,
+        "slo_in": 0.7510682152685471,
+        "slo_first_in": 0.8695517198559543
+      }
+    },
+    "velocity": {
+      "config": {
+        "velocity_window_min": 5,
+        "velocity_clip": 4.0,
+        "velocity_hysteresis": true,
+        "velocity_persist_min": 2,
+        "velocity_dwell_min": 3
+      },
+      "rank_of_default": 6,
+      "grid_size": 60,
+      "tuning": {
+        "cost_ratio_mean": 1.5959490676198285,
+        "cost_ratio_max": 1.6140733502613231,
+        "slo_in_mean": 0.6267951211828928
+      },
+      "heldout": {
+        "cost_ratio": 1.5969512148183531,
+        "slo_in": 0.6363473612666807,
+        "slo_first_in": 0.988617078521462,
+        "viol_in": 0.3636526387333193,
+        "gpu_hours": 207.48333333333332,
+        "starts": 242.0
+      },
+      "selection": {
+        "rule": "resource",
+        "slo_floor": 0.95,
+        "floor_met": false,
+        "eligible": 0,
+        "tuning_resource": {
+          "gpu_hours_mean": 208.15833333333333,
+          "starts_mean": 238.0,
+          "run_cost_mean": 415.90035000000006,
+          "switch_cost_mean": 63.40320000000001
+        },
+        "resource_cost_mean": 479.3035500000001,
+        "cost_rule_config": {
+          "velocity_window_min": 5,
+          "velocity_clip": 4.0,
+          "velocity_hysteresis": true,
+          "velocity_persist_min": 2,
+          "velocity_dwell_min": 3
+        },
+        "same_as_cost_rule": true
+      },
+      "default": {
+        "velocity_window_min": 2,
+        "velocity_clip": 4.0,
+        "velocity_hysteresis": true,
+        "velocity_persist_min": 2,
+        "velocity_dwell_min": 3
+      },
+      "default_tuning": {
+        "cost_ratio_mean": 1.670823375570086
+      },
+      "default_heldout": {
+        "cost_ratio": 1.7278856870486665,
+        "slo_in": 0.69576500373103,
+        "slo_first_in": 0.8564303158243305
+      }
+    }
+  },
+  "slo_select": "resource"
+}

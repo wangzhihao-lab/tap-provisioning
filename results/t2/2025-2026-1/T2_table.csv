@@ -1,0 +1,34 @@
+statistic,value,unit,note
+Course sections,4424,sections,one row per section in the export
+Distinct courses,1125,course codes,
+Colleges,25,colleges,
+Campuses,3,campuses,0 section(s) with no campus
+Meeting slots,6891,section-slots,section x weekday x period block
+Weekend slots,596,section-slots,422 sections; Sat/Sun make-up sessions
+University-wide elective sections,558,sections,temporary-class labels
+Ambiguous week lists,199,sections,4.5% of sections; slots get the week union
+Teaching weeks,18,weeks,week 1 Monday 2025-09-01
+Periods per day,12,periods,"45 min each, six bell blocks"
+Enrollment p10,25,students,per section
+Enrollment median,49,students,per section
+Enrollment p90,100,students,per section
+Enrollment p99,180,students,per section
+Enrollment max,390,students,largest single section
+Total enrolled seats,256498,seats,"sum over sections, students double-counted"
+Sections with 0 enrolled,0,sections,placeholder rows
+Typical meeting length,2,periods,modal n_periods over slots
+Seat-periods in a typical week,596720,seat-periods,"median over weeks 5-16, Mon-Fri periods 1-10, all campuses"
+Peak-to-mean of seats,1.51,ratio,"teaching grid Mon-Fri x periods 1-10, typical week"
+Share of seat-periods in top 5 cells,0.1502,share,top 5 weekday x period cells of the typical week
+Share of seat-periods in top 10 cells,0.2953,share,top 10 weekday x period cells
+Peak week,11,week index,week with the most seat-periods
+Peak week over median week,1.059,ratio,seat-periods
+Seats starting at the same bell (max),17184,students,"bell 14:00, typical weekday, median over weeks 5-16"
+Sections starting at the same bell (max),302,sections,"bell 14:00, typical weekday"
+Seats starting at bell 08:30,14765,students,"typical weekday, median over weeks 5-16; Mon-Fri max 15420 (weekday 3)"
+Seats starting at bell 09:15,75,students,"typical weekday, median over weeks 5-16; Mon-Fri max 110 (weekday 5)"
+Seats starting at bell 10:20,16238,students,"typical weekday, median over weeks 5-16; Mon-Fri max 17122 (weekday 3)"
+Seats starting at bell 11:05,0,students,"typical weekday, median over weeks 5-16; Mon-Fri max 0 (weekday 4)"
+Seats starting at bell 14:00,17184,students,"typical weekday, median over weeks 5-16; Mon-Fri max 18070 (weekday 1)"
+Seats starting at bell 15:50,10576,students,"typical weekday, median over weeks 5-16; Mon-Fri max 11715 (weekday 2)"
+Seats starting at bell 18:40,3936,students,"typical weekday, median over weeks 5-16; Mon-Fri max 4783 (weekday 3)"

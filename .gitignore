@@ -1,0 +1,28 @@
+# environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.DS_Store
+
+# regenerated outputs (the tuned baseline configurations are kept)
+outputs/**
+!outputs/**/
+!outputs/**/best.json
+results/figures/
+results/sim/validation/figures/
+results/q1/assistant/figures/
+results/q2/replay/*.pdf
+results/q2/replay/*.png
+results/t2/*.pdf
+results/t2/*.png
+results/t2/*.svg
+scripts/q2/results/dryrun/*
+!scripts/q2/results/dryrun/T3_calibration.csv
+*.log
+
+# raw exports are not distributed
+data/raw/

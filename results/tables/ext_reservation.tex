@@ -1,0 +1,21 @@
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Tier & Policy & GPU-h/wk & $S^{\mathrm{in}}$ & $S^{\mathrm{off}}$ & Excess USD/wk \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{32B (c2)}} \\
+reservation & Offline optimum & 213.0 & 0.920 & 0.932 & 0.0 \\
+reservation & TAP & 230.8 & 0.995 & 0.993 & 21.5 \\
+reservation & Timetable + known timing & 244.5 & 1.000 & 0.999 & 47.3 \\
+reservation & Timetable + learned timing (prior) & 238.6 & 0.999 & 0.996 & 35.9 \\
+reservation & Reactive, SLO-floor tuned & 268.1 & 0.787 & 0.982 & 220.7 \\
+reservation & Token velocity, SLO-floor tuned & 192.9 & 0.510 & 0.865 & 247.8 \\
+\addlinespace
+\multicolumn{6}{@{}l}{\emph{72B (c3)}} \\
+reservation & Offline optimum & 256.0 & 0.918 & 0.933 & 0.0 \\
+reservation & TAP & 276.8 & 0.991 & 0.994 & 26.3 \\
+reservation & Timetable + known timing & 301.7 & 1.000 & 0.992 & 72.8 \\
+reservation & Timetable + learned timing (prior) & 292.0 & 0.999 & 0.995 & 53.7 \\
+reservation & Reactive, SLO-floor tuned & 462.8 & 0.790 & 0.981 & 628.7 \\
+reservation & Token velocity, SLO-floor tuned & 213.0 & 0.421 & 0.793 & 593.4 \\
+\bottomrule
+\end{tabular}

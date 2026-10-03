@@ -1,0 +1,45 @@
+{
+  "note": "dry-run fixture: fake replicas, 6-s minutes, mu is per dry minute; not a measurement",
+  "tier": "d_rep",
+  "mu": 30.0,
+  "lead_min": 1,
+  "horizon_min": 12,
+  "x_max": 5,
+  "min_replicas": 1,
+  "cost": {
+    "c_run": 0.0333,
+    "beta_start": 0.0333,
+    "p_in": 0.0333,
+    "p_off": 0.00555,
+    "slo_in_s": 2.0,
+    "slo_off_s": 10.0,
+    "x_max": 5
+  },
+  "policy": {
+    "min_replicas": 1,
+    "headroom": 1.0,
+    "hpa_up_util": 0.4,
+    "hpa_down_util": 0.2,
+    "hpa_up_hold_min": 1,
+    "hpa_down_hold_min": 3,
+    "hpa_cooldown_min": 0,
+    "hpa_mode": "proportional",
+    "velocity_window_min": 3,
+    "velocity_clip": 4.0,
+    "velocity_hysteresis": false,
+    "velocity_persist_min": 2,
+    "velocity_dwell_min": 3
+  },
+  "service": {
+    "source": "dry-run placeholder (not a measurement)",
+    "model": "fake/qwen2.5-7b",
+    "max_concurrency": 10,
+    "decode_tokens_per_s": 735.7,
+    "per_stream_tokens_per_s": 87.9,
+    "ttft_floor_s": 0.104,
+    "ttft_at_k_s": 2.0,
+    "commit_block_min": 1,
+    "billing_block_min": 1,
+    "lead_min": 1
+  }
+}

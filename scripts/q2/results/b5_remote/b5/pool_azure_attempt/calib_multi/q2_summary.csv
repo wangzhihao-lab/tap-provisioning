@@ -1,0 +1,39 @@
+tier,source,model,subject,metric,unit,n,median,min,max
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,ttft_p50_s@N=8,s,1,0.08493138896301389,0.08493138896301389,0.08493138896301389
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,ttft_p95_s@N=8,s,1,0.13080378697486594,0.13080378697486594,0.13080378697486594
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,ttft_p99_s@N=8,s,1,0.14056856081588187,0.14056856081588187,0.14056856081588187
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,e2e_p95_s@N=8,s,1,2.8917526844888926,2.8917526844888926,2.8917526844888926
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,throughput_req_s@N=8,req/s,1,2.8008927060365285,2.8008927060365285,2.8008927060365285
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,throughput_tokens_s@N=8,tok/s,1,698.0070855768835,698.0070855768835,698.0070855768835
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=8,error_rate@N=8,fraction,1,0.0,0.0,0.0
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,ttft_p50_s@N=16,s,1,0.06534205249045044,0.06534205249045044,0.06534205249045044
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,ttft_p95_s@N=16,s,1,0.14066475132131015,0.14066475132131015,0.14066475132131015
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,ttft_p99_s@N=16,s,1,0.1613756248902064,0.1613756248902064,0.1613756248902064
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,e2e_p95_s@N=16,s,1,2.9414639034075662,2.9414639034075662,2.9414639034075662
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,throughput_req_s@N=16,req/s,1,5.51442744785988,5.51442744785988,5.51442744785988
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,throughput_tokens_s@N=16,tok/s,1,1362.0329439133468,1362.0329439133468,1362.0329439133468
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=16,error_rate@N=16,fraction,1,0.0,0.0,0.0
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,ttft_p50_s@N=24,s,1,0.0741007654578425,0.0741007654578425,0.0741007654578425
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,ttft_p95_s@N=24,s,1,0.22502343122614538,0.22502343122614538,0.22502343122614538
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,ttft_p99_s@N=24,s,1,0.24135095965582878,0.24135095965582878,0.24135095965582878
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,e2e_p95_s@N=24,s,1,3.187525730743073,3.187525730743073,3.187525730743073
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,throughput_req_s@N=24,req/s,1,7.625798664818714,7.625798664818714,7.625798664818714
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,throughput_tokens_s@N=24,tok/s,1,1908.448363435377,1908.448363435377,1908.448363435377
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=24,error_rate@N=24,fraction,1,0.0,0.0,0.0
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,ttft_p50_s@N=32,s,1,0.07910826604347676,0.07910826604347676,0.07910826604347676
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,ttft_p95_s@N=32,s,1,0.29018735021818426,0.29018735021818426,0.29018735021818426
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,ttft_p99_s@N=32,s,1,0.3243434181623162,0.3243434181623162,0.3243434181623162
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,e2e_p95_s@N=32,s,1,3.2728188804117964,3.2728188804117964,3.2728188804117964
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,throughput_req_s@N=32,req/s,1,10.151174824333372,10.151174824333372,10.151174824333372
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,throughput_tokens_s@N=32,tok/s,1,2513.6503713660095,2513.6503713660095,2513.6503713660095
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=32,error_rate@N=32,fraction,1,0.0,0.0,0.0
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,ttft_p50_s@N=40,s,1,0.07804428203962743,0.07804428203962743,0.07804428203962743
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,ttft_p95_s@N=40,s,1,0.1820099582255352,0.1820099582255352,0.1820099582255352
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,ttft_p99_s@N=40,s,1,0.22674673478235488,0.22674673478235488,0.22674673478235488
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,e2e_p95_s@N=40,s,1,3.2140831449418323,3.2140831449418323,3.2140831449418323
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,throughput_req_s@N=40,req/s,1,12.772185099912326,12.772185099912326,12.772185099912326
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,throughput_tokens_s@N=40,tok/s,1,3146.6630764573474,3146.6630764573474,3146.6630764573474
+concurrency,measured,qwen2.5-7b,qwen2.5-7b @N=40,error_rate@N=40,fraction,1,0.0,0.0,0.0
+literature,"WarmServe, arXiv 2512.09472 (vLLM, no pre-warm TTFT)",WarmServe 7B,WarmServe 7B,ttft_no_prewarm_s,s,1,25.3,25.3,25.3
+literature,"WarmServe, arXiv 2512.09472 (vLLM, no pre-warm TTFT)",WarmServe 13B,WarmServe 13B,ttft_no_prewarm_s,s,1,28.0,28.0,28.0
+literature,"WarmServe, arXiv 2512.09472 (vLLM, no pre-warm TTFT)",WarmServe 70B,WarmServe 70B,ttft_no_prewarm_s,s,1,40.3,40.3,40.3

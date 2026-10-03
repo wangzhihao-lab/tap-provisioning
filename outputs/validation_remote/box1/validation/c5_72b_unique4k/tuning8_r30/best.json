@@ -1,0 +1,98 @@
+{
+  "written": "2026-09-20T13:18:50+00:00",
+  "script": "scripts/sim/tune_baselines.py",
+  "objective": "mean cost_ratio over the tuning seeds (lower is better)",
+  "slice": {
+    "college": "ALL",
+    "weeks": 1,
+    "lead_tier": "d_inst",
+    "adoption": 1.0,
+    "sigma": 0.7,
+    "max_sections": 0,
+    "price_ratio": 30.0,
+    "slo_floor": null
+  },
+  "tuning_seeds": [
+    0,
+    1
+  ],
+  "heldout_seed": 2,
+  "policies": {
+    "reactive": {
+      "config": {
+        "hpa_up_util": 0.7,
+        "hpa_down_util": 0.3,
+        "hpa_cooldown_min": 0,
+        "hpa_down_hold_min": 45
+      },
+      "rank_of_default": 29,
+      "grid_size": 54,
+      "tuning": {
+        "cost_ratio_mean": 7.1811721341972135,
+        "cost_ratio_max": 7.205661290425917,
+        "slo_in_mean": 0.412727533642382
+      },
+      "heldout": {
+        "cost_ratio": 7.116184163351212,
+        "slo_in": 0.40495622495919276,
+        "slo_first_in": 0.06418870926499418,
+        "viol_in": 0.5950437750408073,
+        "gpu_hours": 4839.6,
+        "starts": 6849.0
+      },
+      "default": {
+        "hpa_up_util": 0.7,
+        "hpa_down_util": 0.3,
+        "hpa_cooldown_min": 3,
+        "hpa_down_hold_min": 5
+      },
+      "default_tuning": {
+        "cost_ratio_mean": 9.756309566945845
+      },
+      "default_heldout": {
+        "cost_ratio": 9.768454229108423,
+        "slo_in": 0.30455778210669554,
+        "slo_first_in": 0.01623717930505441
+      }
+    },
+    "velocity": {
+      "config": {
+        "velocity_window_min": 30,
+        "velocity_clip": 4.0,
+        "velocity_hysteresis": false,
+        "velocity_persist_min": 2,
+        "velocity_dwell_min": 3
+      },
+      "rank_of_default": 47,
+      "grid_size": 60,
+      "tuning": {
+        "cost_ratio_mean": 11.687915381977078,
+        "cost_ratio_max": 11.706647839137375,
+        "slo_in_mean": 0.2385128030216011
+      },
+      "heldout": {
+        "cost_ratio": 11.673530088969628,
+        "slo_in": 0.23884628377845063,
+        "slo_first_in": 0.0015129130323607125,
+        "viol_in": 0.7611537162215494,
+        "gpu_hours": 1482.4333333333334,
+        "starts": 11859.0
+      },
+      "default": {
+        "velocity_window_min": 2,
+        "velocity_clip": 4.0,
+        "velocity_hysteresis": true,
+        "velocity_persist_min": 2,
+        "velocity_dwell_min": 3
+      },
+      "default_tuning": {
+        "cost_ratio_mean": 13.59981738216712
+      },
+      "default_heldout": {
+        "cost_ratio": 13.731694488564967,
+        "slo_in": 0.10202599665964708,
+        "slo_first_in": 0.0007813165894820581
+      }
+    }
+  }
+}
